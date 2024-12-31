@@ -1,0 +1,36 @@
+@import '../../../app/base.scss';
+
+.form_container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $theme-red-color;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    .form_row {
+        margin-bottom: 15px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        height: 100px;
+        resize: vertical;
+    }
+
+    button {
+        background-color: black;
+        color: $white-color;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}

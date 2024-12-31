@@ -1,0 +1,13 @@
+.service_banner{
+    position: relative;
+    z-index: 1;
+    // background-color: red;
+    background-image: url(/images/banners/bnr-4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // background-size: contain;
+
+    &__container{
+        min-height: 300px;
+    }
+}

@@ -1,0 +1,88 @@
+@import '../../app/base.scss';
+
+
+// about and form
+.about_and_form{
+    position: relative;
+    z-index: 1;
+}
+
+// about us
+
+.about_us{
+    h1{
+        margin-bottom: 50px;
+        font-size: 40px;
+        font-family: $font-graphit;
+        font-weight: 800;
+        color: $white-color;
+        position: relative;
+        span{
+            color: $theme-yellow-color;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 150px;
+            background: $white-color;
+            left: calc(50% - 75px);
+            bottom : -16px
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 90px;
+            background: $white-color;
+            left: calc(50% - 46px);
+            top: calc(100% + 20px);
+        }
+    }
+    p{
+        font-family: $font-poppins;
+        text-align: justify;
+        margin-top: 20px;
+    }
+}
+
+// Discuss
+.discuss{
+    margin-top: 100px;
+    h2{
+        mix-blend-mode: difference;
+        margin-bottom: 50px;
+        font-size: 40px;
+        font-family: $font-graphit;
+        font-weight: bold;
+        color: $white-color;
+        position: relative;
+        span{
+            color: $theme-yellow-color;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 150px;
+            background: $white-color;
+            left: calc(50% - 75px);
+            bottom : -16px
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 90px;
+            background: $white-color;
+            left: calc(50% - 46px);
+            top: calc(100% + 20px);
+        }
+    }
+
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+        
+}

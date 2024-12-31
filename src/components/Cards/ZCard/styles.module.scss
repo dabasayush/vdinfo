@@ -1,0 +1,58 @@
+@import '../../../app/base.scss';
+
+.card_item{
+    max-width: 400px;
+    min-height: 300px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.108);
+    padding: 35px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.5);
+    .eff{
+        transition: transform 0.5s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .client_image{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin-top: 5px;
+            .yt_logo{
+                position: absolute;
+                top: -40px;
+                right: -10px;
+                img{
+                    width: 80px;
+                    height: 70px;
+                    border: none;
+                }
+            }
+            img{
+                width: 150px;
+                height: 150px;
+                border: 3px solid $white-color;
+                padding: 4px;
+                border-radius: 50%;
+            }
+        }
+        
+        h5{
+            font-family: $font-poppins;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        p{
+            margin-top: 10px;
+        }
+        button{
+            margin-top: 20px;
+            background-color: $theme-red-color;
+            border: 1px solid transparent;
+            padding: 5px 10px;
+            border-radius: 10px;
+            color: $white-color;
+        }
+    }
+    
+}
