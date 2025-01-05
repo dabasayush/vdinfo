@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect } from 'react'
 
-export default function canvas() {
+export default function Canvas() {
     useEffect(() => {
         const smokeScript = document.createElement('script');
         smokeScript.src = '/smoke.js';

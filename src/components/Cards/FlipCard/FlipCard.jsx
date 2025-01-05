@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import BootStrapModal from "../../Modal";
+import Image from "next/image";
 
 export default function FlipCard() {
   return (

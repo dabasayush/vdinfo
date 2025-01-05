@@ -5,6 +5,7 @@ import { PiDotsThreeOutlineFill, PiExport } from "react-icons/pi";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaFacebookF, FaTwitter } from 'react-icons/fa';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 export default function ProfileCard() {

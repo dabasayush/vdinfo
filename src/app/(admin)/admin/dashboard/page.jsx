@@ -8,16 +8,16 @@ import useAllPosts from '../../../../hooks/useAllPosts';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { toast } from 'react-toastify';
-import { mutate } from "swr";
 import { MdModeEdit, MdDelete } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
+import Image from 'next/image';
 
 
 
 
 
 const Dashboard = () => {
-
+ 
   const router = useRouter()
   const { data, isError, isLoading } = useAllPosts();
   if (isLoading) return <LoaderSpinner />
@@ -40,9 +40,9 @@ const Dashboard = () => {
 
               const response = await res.json();
              // console.log('response', response)
-              if (response?.success === true) toast.success('post deleted');
-              //mutate(`/api/post/${postId}`, data, false); // Update the local data without a revalidation
-              router.push("/admin/dashboard");
+             if (response?.success === true) toast.success('post deleted');
+             //mutate(`/api/post/${postId}`, data, false); // Update the local data without a revalidation
+             router.push("/admin/dashboard");
           }
 
       } catch (error) {
@@ -68,7 +68,7 @@ const Dashboard = () => {
           headerName: 'Image',
           width: 150,
           renderCell: (values => (
-              <img style={{ width: '80px', }} src={values.row.url} alt="" />
+              <Image style={{ width: '80px', }} src={values.row.url} alt="" />
           ))
       },
       {
@@ -95,23 +95,23 @@ const Dashboard = () => {
 
   return (
       <>
-          <AdminLayout>
-              <h1>Posts</h1>
-              <Box sx={{ pb: 2, display: "flex", justifyContent: "right" }}>
-                  <Button variant='contained' color="success" startIcon={<FaPlus />}><Link style={{ color: 'white', textDecoration: 'none' }} href='/admin/post/create'>Create Post</Link> </Button>
-              </Box>
-              <Box sx={{ height: 450, width: '100%' }}>
-                  <DataGrid
-                      getRowId={(row) => row._id}
-                      rows={allPosts}
-                      columns={columns}
-                      pageSize={10}
-                      rowsPerPageOptions={[10]}
-                      checkboxSelection
-                  />
-              </Box>
+        <AdminLayout>
+            <h1>Posts</h1>
+            <Box sx={{ pb: 2, display: "flex", justifyContent: "right" }}>
+                <Button variant='contained' color="success" startIcon={<FaPlus />}><Link style={{ color: 'white', textDecoration: 'none' }} href='/admin/post/create'>Create Post</Link> </Button>
+            </Box>
+            <Box sx={{ height: 450, width: '100%' }}>
+                <DataGrid
+                    getRowId={(row) => row._id}
+                    rows={allPosts}
+                    columns={columns}
+                    pageSize={10}
+                    rowsPerPageOptions={[10]}
+                    checkboxSelection
+                />
+            </Box>
 
-          </AdminLayout>
+        </AdminLayout>
       </>
   )
 }
