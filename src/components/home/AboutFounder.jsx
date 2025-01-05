@@ -8,7 +8,7 @@ export default function AboutFounder() {
             <Row style={{border:"1px solid white",}}>
                 <Col className={styles.about_founder__content} md={8}>
                     <h2>
-                        SEO Agency India’s #1 Digital Marketing Strategist Teaches The Secrets of How You Can Transform Your
+                        SEO Agency India&apos;s #1 Digital Marketing Strategist Teaches The Secrets of How You Can Transform Your
                     </h2>
                     <div className={styles.titles}>
                         <ul>

@@ -54,7 +54,7 @@ export default function Dcard() {
                     </defs>
                     </svg>
                     <p className={styles.card_title}>Design Wireframe and Mockups</p>
-                    <p className={styles.card_description}> Our team creates wireframes and mockups, offering a visual representation of the campaign's structure and digital assets.
+                    <p className={styles.card_description}> Our team creates wireframes and mockups, offering a visual representation of the campaign&apos;s structure and digital assets.
                     </p>
                 </div>
             </div>
@@ -204,7 +204,7 @@ export default function Dcard() {
                     </defs>
                     </svg>
                     <p className={styles.card_title}>SEO Optimization</p>
-                    <p className={styles.card_description}> We continuously enhance search engine optimization (SEO) to improve your website's ranking, traffic, and lead generation.</p>
+                    <p className={styles.card_description}> We continuously enhance search engine optimization (SEO) to improve your website&apos;s ranking, traffic, and lead generation.</p>
                 </div>
             </div>
         </div>
