@@ -33,7 +33,7 @@ export default function AboutFounder() {
                     
                     <div className={styles.aboutceo}>
                         <h4>
-                            What other SEO companies don't tell you | SEO Industry Exposed by VD
+                            What other SEO companies don&apos;t tell you | SEO Industry Exposed by VD
                         </h4>
                     </div>
                     
